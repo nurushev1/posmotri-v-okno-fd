@@ -32,7 +32,6 @@ html {
 .result {
   grid-area: result;
   max-width: 711px;
-  max-height: 456px;
 }
 
 .result__video-container {
@@ -127,8 +126,8 @@ html {
   height: 27px;
   border-width: 1px 0;
   border-style: solid;
-  border-color: #fff;
-  color: rgba(255, 255, 255, 0.7);
+  border-color: currentColor;
+  color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -143,7 +142,7 @@ html {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #FFFFFF;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
@@ -183,7 +182,6 @@ html {
 .content__details {
   grid-area: content__details;
   max-width: 399px;
-  max-height: 534px;
 }
 
 .title {
@@ -248,6 +246,10 @@ html {
   background-color: #545050;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__video-card {
   display: flex;
   flex-direction: row;       
@@ -259,8 +261,7 @@ html {
 }
 
 .content__video-card-title {   
-  max-width: 196px;
-  height: 30px;           
+  max-width: 196px;   
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
